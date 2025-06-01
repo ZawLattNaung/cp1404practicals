@@ -5,7 +5,7 @@ Replace each `...` with your meaningful answer.
 
 ## What percentage of the lecture videos have you watched so far?
 
-60%
+70%
 
 ## What time, location and duration have you scheduled to watch lecture videos?
 
@@ -22,7 +22,7 @@ I need to stop leaving things until the last minute. I want to manage my time be
 
 ## What are you currently doing poorly for practicals in this subject that you will change?
 
-I am not confident when working with files and with the tulip program. 
+I am not confident when working with files and with the tuple . 
 I need to spend more time learning and practicing these topics.
 
 ## What are you doing really well for practicals in this subject?
