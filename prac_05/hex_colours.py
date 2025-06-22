@@ -7,5 +7,5 @@ while hex_color != "":
     try:
         print(hex_color, "is", HEX_COLORS[hex_color])
     except KeyError:
-        print("Invalid short state")
+        print("Invalid state")
     hex_color = input("Enter color name:  ").lower()
