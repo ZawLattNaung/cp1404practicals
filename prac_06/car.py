@@ -3,14 +3,15 @@
 
 class Car:
     """Represent a Car object."""
-
-    def __init__(self, fuel=0):
+    "add name field to car class"
+    def __init__(self, fuel=0,name="Car"):
         """Initialise a Car instance.
 
         fuel: float, one unit of fuel drives one kilometre
         """
         self.fuel = fuel
         self._odometer = 0
+        self.name=name
 
     def add_fuel(self, amount):
         """Add amount to the car's fuel."""
@@ -32,4 +33,4 @@ class Car:
 
     """Adding __str__ method to car.py"""
     def __str__(self):
-        return f"{self.name}, file={self.fuel}, odometer={self._odometer}"
+        return f"{self.name}, fuel={self.fuel}, odometer={self._odometer}"
