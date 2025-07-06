@@ -12,3 +12,5 @@ class Guitar:
         self.name=name
         self.year=year
         self.cost=cost
+    def __str__(self): #adding __str__
+        return f"{self.name} ({self.year}) : ${self.cost}"
