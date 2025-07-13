@@ -35,7 +35,14 @@ def display_guitars(guitars):
         print(guitar)
 
 def add_guitar():
-    pass
+    """Prompt user to add a new guitar and return it, or None if no name is entered."""
+    name = input("Enter guitar name: ")
+    if not name:
+        return None  # Return None to indicate no more guitars to add
+
+    year = int(input("Enter year: "))
+    cost = float(input("Enter cost: "))
+    return Guitar(name, year, cost)
 
 def save_guitars(filename, guitars):
     pass
