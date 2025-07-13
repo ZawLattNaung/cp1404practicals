@@ -18,8 +18,15 @@ def main():
     save_guitars(FILENAME, guitars)
     print("\nGuitars have been saved to", FILENAME)
 
-def load_guitars(FILENAME):
-    pass
+def load_guitars(filename):
+    """Load guitars from a CSV file and return a list of Guitar objects."""
+    guitars = []
+    with open(filename, 'r') as file:
+        reader = csv.reader(file)
+        for row in reader:
+            name, year, cost = row
+            guitars.append(Guitar(name, int(year), float(cost)))
+    return guitars
 
 def display_guitars(guitars):
     pass
