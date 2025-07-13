@@ -45,7 +45,11 @@ def add_guitar():
     return Guitar(name, year, cost)
 
 def save_guitars(filename, guitars):
-    pass
+    """Save all guitars to a CSV file."""
+    with open(filename, 'w', newline='') as file:
+        writer = csv.writer(file)
+        for guitar in guitars:
+            writer.writerow([guitar.name, guitar.year, guitar.cost])
 
 
 if __name__ == "__main__":
