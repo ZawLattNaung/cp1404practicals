@@ -29,7 +29,10 @@ def load_guitars(filename):
     return guitars
 
 def display_guitars(guitars):
-    pass
+    """Display all guitars in the list."""
+    print("Guitars:")
+    for guitar in guitars:
+        print(guitar)
 
 def add_guitar():
     pass
